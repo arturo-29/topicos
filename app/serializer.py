@@ -6,7 +6,22 @@ class MatriculaSerializer(serializers.ModelSerializer):
         model = matricula
         fields = '__all__'
 
-class PersonaSerializer(serializers.ModelSerializer):
+class AlumnoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = persona
+        model = alumno
+        fields = '__all__'
+
+class MateriaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = materia
+        fields = '__all__'
+
+class DocenteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = docente
+        fields = '__all__'
+
+class CalificacionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = calificacion
         fields = '__all__'
